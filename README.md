@@ -25,11 +25,20 @@ Warehouse management system with role-based access and a REST API.
 
 ## Running
 
+Create the configuration files from the examples and set your own values (use the same database password in both):
+
+```bash
+cp .env.example .env
+cp backend/.env.example backend/.env
+```
+
+Then start everything:
+
 ```bash
 docker-compose up --build
 ```
 
-This starts PostgreSQL, the backend (port 8080) and the frontend (port 3000). Backend settings are read from backend/.env.
+This starts PostgreSQL, the backend (port 8080) and the frontend (port 3000).
 
 ## Structure
 
